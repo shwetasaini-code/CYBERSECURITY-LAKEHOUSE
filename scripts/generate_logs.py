@@ -11,7 +11,7 @@ events = [
     "FAILED_LOGIN",
     "PASSWORD_RESET",
     "MALWARE_ALERT",
-    "FIREWALL_BLOCK",
+    "FIREWALL_bLOCK",
     "SUSPICIOUS_IP"
 ]
 

@@ -90,6 +90,15 @@ x-airflow-common:
       condition: service_healthy
 
 services:
+  spark:
+    image: jupyter/pyspark-notebook:latest
+    container_name: cyber_spark
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+    volumes:
+      - ./:/home/jovyan/work
+    working_dir: /home/jovyan/work
   postgres:
     image: postgres:16
     environment:

@@ -3,7 +3,8 @@ from minio.error import S3Error
 import os
 
 client = Minio(
-    endpoint="localhost:9000",
+    # endpoint="localhost:9000",
+    endpoint="minio:9000",
     access_key="minioadmin",
     secret_key="minioadmin",
     secure=False
